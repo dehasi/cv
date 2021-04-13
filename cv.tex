@@ -1,13 +1,4 @@
 \documentclass{article}
-\usepackage{amsmath}
-\usepackage{latexsym}
-\usepackage{amsfonts}
-\usepackage[normalem]{ulem}
-\usepackage{soul}
-\usepackage{array}
-\usepackage{amssymb}
-\usepackage{extarrows}
-\usepackage{graphicx}
 \usepackage[backend=biber,
 style=numeric,
 sorting=none,
@@ -16,88 +7,27 @@ doi=false,
 url=false,
 ]{biblatex}\addbibresource{bibliography.bib}
 
-\usepackage{subfig}
-\usepackage{wrapfig}
 \usepackage{txfonts}
-\usepackage{wasysym}
 \usepackage{enumitem}
-\usepackage{adjustbox}
-\usepackage{ragged2e}
 \usepackage[svgnames,table]{xcolor}
-\usepackage{tikz}
 \usepackage{longtable}
-\usepackage{changepage}
 \usepackage{setspace}
-\usepackage{hhline}
-\usepackage{multicol}
-\usepackage{tabto}
-\usepackage{float}
-\usepackage{multirow}
-\usepackage{makecell}
-\usepackage{fancyhdr}
-\usepackage[toc,page]{appendix}
 \usepackage[hidelinks]{hyperref}
-\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
-\tikzset{>={Latex[width=1.5mm,length=2mm]}}
-\usepackage{flowchart}
-\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.59in,top=0.79in,bottom=0.49in,headheight=1in]{geometry}
+\usepackage[a4paper,left=1.5cm,right=1cm,top=1cm,bottom=0.1cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\TabPositions{0.49in,0.98in,1,47in,1.96in,2.45in,2.94in,3,43in,3.92in,4.41in,4.9in,5.39in,5.88in,6.37in,}
-
-\urlstyle{same}
-
 
 %XXXXXXXXXXXX Set Depths for Sections XXXXXXXXXXXXXX
-
-% 1) Section
-% 1.1) SubSection
-% 1.1.1) SubStbSection
-% 1.1.1.1) Paragraph
-% 1.1.1.1.1) Subparagraph
-
 
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{5}
 
+%XXXXXXXXXXXX Set Depths for Nested Lists created by \begin{enumerate} XXXXXXXXXXXXXX
 
-%XXXXXXXXXXXX Set Depths for Nested Lists created by {beginfenumerate} XXXXXXXXXXXXXX
-
-
-\setlistdepth{9}
-\renewlist{enumerate}{enumerate}{9}
-       \setlist[enumerate,1]{label=\arabic*)}
-       \setlist[enumerate,2]{label=\alph*)}
-       \setlist[enumerate,3]{label=(\roman*)}
-       \setlist[enumerate,4]{label=(\arabic*)}
-       \setlist[enumerate,5]{label=(\Alph*)}
-       \setlist[enumerate,6]{label=(\Roman*)}
-       \setlist[enumerate,7]{label=\arabic*}
-       \setlist[enumerate,8]{1abel=\alph*}
-       \setlist[enumerate,9]{1abel=\roman*}
-
-\renewlist{itemize}{itemize}{9}
-       \setlist[itemize]{label=$\cdot$}
-       \setlist[itemize,1]{label=\textbullet}
-       \setlist[itemize,2]{1abel=$\circ$}
-       \setlist[itemize,3]{label=$\ast$}
-       \setlist[itemize,4]{label=$\dagger$}
-       \setlist[itemize,5]{label=$\triangleright$}
-       \setlist[itemize,6]{label=$\bigstar$}
-       \setlist[itemize,7]{label=$\blacklozenge$}
-       \setlist[itemize,8]{label=$\prime$}
-
-\pagenumbering{gobble}
-\setlength{\topsep}{0pt}\setlength{\parskip}{8.04pt}
-\setlength{\parindent}{0pt}
-
-% MUM= This sets tixnespacing (verticte gap between Lines) Defauit=1
-%  Wararann
-
-
-\renewcommand{\arraystretch}{1.3}
-
-\newcommand{\myhy}[2]{\hyperref[#1]{\color{blue}\setulcolor{blue}\ul{#2}}}
+\renewlist{itemize}{itemize}{2}
+       \setlist[itemize]{label=$\cdot$, itemsep=0.5pt}
+       \setlist[itemize,1]{label=\textbullet, itemsep=0.5pt}
+       \setlist[itemize,2]{1abel=$\circ$, itemsep=0.5pt}
 
 \hypersetup{
     colorlinks=true,
@@ -107,157 +37,126 @@ url=false,
     linkbordercolor=blue,
 }
 \urlstyle{same}
-%%%%%===== Document code starts here XX=XXXXXXXrann
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-{
-\setlength\extrarowheight{0.1pt}
-\begin{longtable}{p{1.00in}p{-1.20in}p{1.87in}p{1.28in}p{2.32in}}
-
-%row no:1
+\begin{longtable}{p{0.00in}p{0.00in}p{0.0in}p{0.00in}p{0.00in}}
 \multicolumn{3}{p{\dimexpr3.00in+4\tabcolsep\relax}}{{\fontsize{16pt}{19.2pt}\selectfont
-  \textbf{Ravil Galeyev}} \href{https://www.linkedin.com/in/ravil-galeyev-9a7540102/}{linkedin} \par Amsterdam, Netherlands. (Kenningsmigrant) \par
-  Citizenship: Kazakhstan} &
-\multicolumn{1}{p{1.30in}}{ +XX XXX XXX XXX \par skype: xxxxx.xxxxxxx \par } &
-\multicolumn{1}{p{2.30in}}{xxxxxxxx@gmail.com \par
-  \href{http://stackoverflow.com/story/dehasi}{http://stackoverflow.com/story/dehasi} } \\
-\hhline{~~~~~}
+    \textbf{Ravil Galeyev}}
+    \href{https://www.linkedin.com/in/ravil-galeyev-9a7540102}{LinkedIn},
+    \href{http://stackoverflow.com/story/dehasi}{StackOverflow}
+} &
+\multicolumn{1}{l}{xxxxxxxx@gmail.com} &
+\multicolumn{1}{l}{+31 123 456 789} \\
 
-%row no:2
-\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{\Centering \textbf{Key skills}} \\
-\hhline{~~~~~}
+\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{
+    Amsterdam, Netherlands. Citizenship: Kazakhstan (Kennismigrant).
+\par} \\
 
-%row no:3
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{Main} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Java8, Spring, SQL} \\
-\hhline{~~~~~}
+\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{
+    \textbf{Key words:} Java, Spring, SQL, Docker, Jenkins, Eclipse MAT, Apache Ignite ML
+\par} \\
 
-%row no:4
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{Good} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Apache Ignite ML, MySQL, Docker, Jenkins} \\
-\hhline{~~~~~}
+\multicolumn{5}{c}{\textbf{Work experience}} \\
 
-%row no:5
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{Basic} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Spark, Splunk, Scala, Groovy, AWS, Cassandra, Spanner} \\
-\hhline{~~~~~}
-
-%row no:6
-\multicolumn{5}{p{\dimexpr7.12in+8\tabcolsep\relax}}{\Centering \textbf{Work experience}} \\
-\hhline{~~~~~}
-
-%row no:7
-%\multicolumn{1}{p{\dimexpr1.00in+2\tabcolsep\relax}}{January 2019 \par Amsterdam, Netherlands} &
-%\multicolumn{4}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://degiro.nl}{DeGiro}
-%Position: \textbf{Java developer} \par
-%\begin{itemize}
-%    \item Point 1
-%    \item Point 2
-%\end{itemize}} \\
-%\hhline{~~~~~}
-
-%row no:8
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{September 2017 -- \par December 2018 \par Poland, Krakow} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Grand Parade (part of William Hill company)
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{January 2019 \par Amsterdam,\par Netherlands} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://degiro.nl}{DeGiro} (acquired by Flatex)
 Position: \textbf{Java developer} \par
+Developing the trading platform. Implementing various front-office and back-office tasks,
+\par mostly related to client data, instant payments and reporting;
 \begin{itemize}
-    \item Develop RESTful Microservices;
-    \item Lead back-end team in the internal project;
-    \item Automated documentation generation;
-    \item Established API contracts between front- and back-end;
-    \item Refactored legacy services, increased code coverage and updated code standards.
-\end{itemize}} \\
-\hhline{~~~~~}
+    \item Led client data and payments integration with Flatex during acquisition;
+    \item Built a monorepo (for libs) and CI pipeline, fixed bugs in
+          \href{https://github.com/mojohaus/flatten-maven-plugin/pull/152}{maven-flatten-plugin}
+          and  \href{https://github.com/apache/maven/pull/347}{maven};
+    \item Developed a DSL for test data generation;
+    \end{itemize}
+    Made a \href{https://compscicenter.ru/courses/practical-minimum/}{course} in Computer Science Center.
+\par} \\
 
-%row no:9
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{August 2016 -- \par August 2017 \par Poland, Krakow} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Epam (Google onsite)
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{September 2017 -- \par December 2018 \par Krakow, Poland} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://grandparade.co.uk/}{Grand Parade} (part of William Hill company)
+Position: \textbf{Java developer} \par
+Developing Microservices for the betting platform:
+\begin{itemize}
+    \item Led a backend team for CRM-ish app for betting shops across the UK;
+    \item Automated documentation generation;
+    \item Established API contracts between front- and backend;
+    \item Refactored legacy services, increased test coverage;
+\end{itemize}
+    Started \href{https://github.com/apache/ignite/commits?author=dehasi}{contributing} to open source.
+\par} \\
+
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{August 2016 -- \par August 2017 \par Krakow, Poland} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://www.epam.com/}{Epam} (Google onsite)
 Position: \textbf{Java developer} \par \par
 Contract software engineer at Google (under NDA)
 \par}\\
-\hhline{~~~~~}
 
-%row no:10
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{June 2015 -- August 2016 \par Russia, \par St. Petersburg} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{T-Systems (Swiss Federal Railways SBB CFF FFS)
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{June 2015 -- \par August 2016 \par St. Petersburg, \par Russia} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://www.t-systems.com/ru/en}{T-Systems} (Swiss Federal Railways SBB CFF FFS)
 Position: \textbf{Java developer} \par
-Ticket sailing system development: \par
+Development a ticket sailing system for public transport. Mostly worked in data-team.
 \begin{itemize}
-    \item Automated Data releases generation;
+    \item Created and maintained tools for data releases generation and validation;
     \item Created a tool for special routes importing;
     \item Created a tool for automating tests-scripts creation;
-    \item Maintained the database and migrated data;
-    \item Implemented new functionality in terms of User Stories;
-    \item Provided lectures and supervising interns.
-\end{itemize}} \\
-\hhline{~~~~~}
+    \item Maintained a database and migrated data;
+\end{itemize}
+\par} \\
 
-%row no:11
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2012 -- 2015 \par Russia, \par St. Petersburg} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Russain Academy of Sciencee\par Institute of Analitical Instumentation,
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2012 -- 2015 \par St. Petersburg,\par Russia} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Russain Academy of Science\par \href{http://iairas.ru/en/}{Institute for Analytical Instrumentation}
 Position: \textbf{C/C$\#$ developer} \par
 \begin{itemize}
-    \item Developed DSL for a device programming;
-    \item Developed firmware for PCR analysis devices;
-    \item Developed software on Windows and Linux for devices control.
-\end{itemize}} \\
-\hhline{~~~~~}
+    \item Developed a DSL for programming genetic experiments;
+    \item Developing firmware, for PCR and DNA analysis devices, based on ARM processors;
+    \item Developing software on Windows and Linux for device control.
+\end{itemize}
+} \\
 
-%row no:12
-\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{\Centering \textbf{Internships}} \\
-\hhline{~~~~~}
+\multicolumn{5}{c}{\textbf{Internships}} \\
 
-%row no:13
 \multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2016 (spring) \par St. Petersburg} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{JetBrains (Java intern) \par
-Groovy decompilator development github} \\
-\hhline{~~~~~}
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://www.jetbrains.com/}{JetBrains} (Java intern) \par
+    Groovy \href{https://github.com/dehasi/groovy-dc}{decompilator} development.
+} \\
 
-%row no:14
 \multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2015 (spring) \par St. Petersburg} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{landex (Java intern) \par
-Internal web application development.} \\
-\hhline{~~~~~}
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://yandex.com/company/}{Yandex} (Java intern) \par
+    Internal web application development.
+} \\
 
-%row no:15
-\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{\Centering \textbf{Education}} \\
-\hhline{~~~~~}
+\multicolumn{5}{c}{ \textbf{Education}} \\
 
-%row no:16
 \multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2008 -- 2014} &
 \multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Saint Petersburg Electrotechnical
-   University $"$\href{https://etu.ru/en/university/}{LETT}$"$.
-   \par Faculty of Computer Science and Technology, Master degree in Computer Technology} \\
-\hhline{~~~~~}
+   University $"$\href{https://etu.ru/en/university/}{LETI}$"$. Master degree in Computer Technology
+} \\
 
-%row no:17
 \multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2014 -- 2016} &
 \multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Saint Petersburg
-   \href{https://compscicenter.ru/}{Computer Science Center} Specialization: Data  mining} \\
-\hhline{~~~~~}
+    \href{https://compscicenter.ru/students/714/}{Computer Science Center} Specialization: Data mining
+} \\
 
-%row no:18
-\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2017 -- 2018 \par Coursera} &
-\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{\href{https://www.coursera.org/iacco
-   untiaccomplishments/specializationicertificate/HEKRFB8REKUD}{Parallel, Concurrent, and Distributed Programming in Java}\ $ \vert $
-   \href{https://www.coursera.orgiaccountiaccomplishmentsirecords/HL6SFFSUCT}{Machine
-   Learning} \par \href{https://www.coursera.org/accountiaccomplishmentsispecializationj
-   /certificate/GAR3792UCR6W}{Functional Programming in Scala} }
-   \\
-\hhline{~~~~~}
+\multicolumn{2}{p{\dimexpr1.00in+2\tabcolsep\relax}}{2017 -- 2018} &
+\multicolumn{3}{p{\dimexpr5.85in+4\tabcolsep\relax}}{Coursera:
+\href{https://www.coursera.org/account/accomplishments/specialization/certificate/HEKRFB8RMKUD}{Parallel, Concurrent, and Distributed Programming in Java}\ $\vert$
+    \href{https://www.coursera.org/account/accomplishments/verify/3YL6SFFSLZCT}{Machine Learning} \par
+    \href{https://www.coursera.org/account/accomplishments/specialization/certificate/GAR3792UCR6W}{Functional Programming in Scala}
+\par} \\
 
-%row no:19
-\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{\textbf{Open Source: }
-   \href{https://github.com/apache/ignite}{Apache Ignite} Machine Learning
-   \href{https://github.com/apache/ignite/commits?author=dehasi}{Contributor} \par
-   \textbf{Languages: }English, Polish, Russian, a bit of German\par } \\
-\hhline{~~~~~}
+\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{
+    \textbf{Open Source:}
+    \href{https://github.com/apache/ignite/commits?author=dehasi}{Apache Ignite ML},
+    \href{https://github.com/mojohaus/flatten-maven-plugin/commits?author=dehasi}{flatten-maven-plugin},
+    \href{https://github.com/dehasi/zeliba}{ZeLiba}
+\par} \\
 
+\multicolumn{5}{p{\dimexpr7.00in+8\tabcolsep\relax}}{
+    \textbf{Languages:} English, Polish, Russian, a bit of Dutch
+} \\
 
 \end{longtable}
-
-%\vspace{\baselineskip}
-%\printbibliography
-\end{document}}
-
+\end{document}
