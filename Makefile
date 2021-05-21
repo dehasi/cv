@@ -1,3 +1,7 @@
+.PHONY: work
+work:
+	lualatex cv.tex
+	lualatex cv2.tex
 galeyev_java_cv.pdf: cv.tex
 	lualatex -jobname=$(basename $@) $<
 
