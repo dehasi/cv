@@ -1,4 +1,4 @@
-galeyev_java_cv.pdf: cv2.tex
+galeyev_java_cv.pdf: cv.tex
 	lualatex -jobname=$(basename $@) $<
 
 .PHONY: contacts
