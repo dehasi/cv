@@ -1,5 +1,6 @@
 .PHONY: work
 work:
+	docker run --rm -i -v `PWD`:/data latex pdflatex cv3.tex
 	lualatex cv.tex
 	lualatex cv2.tex
 galeyev_java_cv.pdf: cv.tex
