@@ -25,11 +25,21 @@
 
 % For mathematical symbols
 \usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage[svgnames,table]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=blue,
+	linkbordercolor=blue,
+}
+\urlstyle{same}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Ravil Galeyev}
+\address{Amsterdam \linebreak blavla \href{https://www.linkedin.com/in/ravil-galeyev-9a7540102}{LinkedIn}}
+\contacts{+31 123 456 789 \linebreak xxxxxxx@gmail.com}
 
 \begin{document}
 
@@ -38,13 +48,19 @@
 
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV
+		\begin{cvsubsection}{Java Developer }{\href{https://degiro.nl}{DeGiro} (acquired by Flatex)}{January 2019 - present}
+			Developing the trading platform. Implementing various tasks,
+			mostly related to client data, instant payments and reporting;
+
 			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
+				\item Led client data and payments integration with Flatex during acquisition;
+				\item Built a monorepo and CI pipeline, fixed bugs in
+				\href{https://github.com/apache/maven/pull/347}{maven}
+				and  \href{https://github.com/mojohaus/flatten-maven-plugin/pull/152}{maven-flatten-plugin};
+				\item Developed a DSL for test data generation;
+				\item Dockerized test envionmets;
 			\end{itemize}
+			Made a \href{https://compscicenter.ru/courses/practical-minimum/}{course} in Computer Science Center.
 		\end{cvsubsection}
 
 		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}
